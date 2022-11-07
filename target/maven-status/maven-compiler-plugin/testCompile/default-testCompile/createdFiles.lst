@@ -1,0 +1,6 @@
+com\example\TestingWebApplicationTest.class
+com\example\HttpRequestTest.class
+com\example\SmokeTest.class
+com\example\WebMockTest.class
+com\example\TestingWebApplicationTests.class
+com\example\WebLayerTest.class
