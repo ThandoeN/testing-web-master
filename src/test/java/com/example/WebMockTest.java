@@ -1,6 +1,7 @@
 package com.example;
 
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -28,4 +29,6 @@ public class WebMockTest {
 		this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
 			.andExpect(content().string(containsString("Hello, Mock")));
 	}
+
+
 }
